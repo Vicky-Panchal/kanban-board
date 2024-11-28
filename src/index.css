@@ -26,10 +26,15 @@ body {
 
 .kanban-column {
   flex: 1;
-  background-color: #f4f4f4;
   padding: 10px;
   border-radius: 5px;
+  
+  /* Center the cards within the column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .kanban-column h2 {
   text-align: center;

@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .display-container {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .display-button {
+    background: none; /* Removes background */
+    border: none;     /* Removes border */
+    font-size: 14px;
+    cursor: pointer;   /* Ensures the button still looks clickable */
+    outline: none;     /* Removes focus outline */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .dropdown-item select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .dropdown-item:last-child {
+    margin-bottom: 0;
+  }
+  
