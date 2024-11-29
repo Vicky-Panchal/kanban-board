@@ -26,10 +26,15 @@ const TicketCard = ({ ticket }) => {
           className="status-icon"
         />
         <span className="ticket-id">{ticket.id}</span>
+        <img src={"/user.svg"} alt="User Avatar" className="user-avatar" />
       </div>
+      
       <div className="ticket-content">
+        
         <h3 className="ticket-title">{ticket.title}</h3>
+        
       </div>
+      
       <div className="ticket-footer">
         <div className="ticket-meta">
           <img
@@ -39,7 +44,7 @@ const TicketCard = ({ ticket }) => {
           />
           <span className="ticket-tag">{ticket.tag}</span>
         </div>
-        <img src={ticket.userImage} alt="User Avatar" className="user-avatar" />
+        
       </div>
     </div>
   );

@@ -1,11 +1,22 @@
 .kanban-column-header {
     display: flex;
     align-items: center;
-    gap: 8px; /* Adjust space between icons and heading */
+    gap: 4px; /* Adjust space between icons and heading */
+    margin: 0;
+    
+    width: 100%;
   }
   
   .kanban-icon {
     width: 24px;
     height: 24px;
   }
-  
+  .kanban-icon-after {
+    width: 24px;
+    height: 24px;
+    margin-left: 30%;
+  }
+
+  h2,.kanban-icon{
+    margin-right:10%;
+  }

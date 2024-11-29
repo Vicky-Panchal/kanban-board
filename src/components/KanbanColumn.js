@@ -6,11 +6,15 @@ const KanbanColumn = ({ group, tickets }) => {
   // Define icons based on group/status
   const groupIcons = {
     Todo: "/to-do.svg",
-    "In Progress": "/in-progress.svg",
-    Done: "/done.svg",
-    Cancelled: "/cancelled.svg",
+    "In progress": "/in-progress.svg",
+    Backlog: "/Backlog.svg",
+    Done: "/Done.svg",
+    Cancelled: "/Cancelled.svg",
   };
 
+  // console.log(group);
+  // console.log("*****************************");
+  // console.log(tickets); 
   return (
     <div className="kanban-column">
       <div className="kanban-column-header">
@@ -23,9 +27,9 @@ const KanbanColumn = ({ group, tickets }) => {
         <h2>{group}</h2>
         {/* Icon after the heading */}
         <img
-          src={groupIcons[group]}
+          src={"/add.svg"}
           alt={`${group} Icon`}
-          className="kanban-icon"
+          className="kanban-icon-after"
         />
       </div>
 
