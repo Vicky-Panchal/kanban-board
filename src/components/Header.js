@@ -12,19 +12,19 @@ const Header = ({ grouping, setGrouping, sorting, setSorting }) => {
     <div className="header">
       {/* Display Button */}
       <div className="display-container">
-        {/* Corrected image paths */}
-        <img src="/Display.svg" alt="Display Icon" />
         <button className="display-button" onClick={toggleDropdown}>
+          <img src="/Display.svg" alt="Display Icon" />
           Display
+          <img src="/down.svg" alt="Dropdown Arrow" />
         </button>
-        <img src="/down.svg" alt="Dropdown Arrow" />
 
         {/* Dropdown Menu */}
         {showDropdown && (
           <div className="dropdown-menu">
             <div className="dropdown-item">
-              <label>Group By:</label>
+              <label className="dropdown-label">Grouping</label>
               <select
+                className="dropdown-select"
                 value={grouping}
                 onChange={(e) => setGrouping(e.target.value)}
               >
@@ -35,8 +35,9 @@ const Header = ({ grouping, setGrouping, sorting, setSorting }) => {
             </div>
 
             <div className="dropdown-item">
-              <label>Sort By:</label>
+              <label className="dropdown-label">Ordering</label>
               <select
+                className="dropdown-select"
                 value={sorting}
                 onChange={(e) => setSorting(e.target.value)}
               >

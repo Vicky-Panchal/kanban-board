@@ -1,0 +1,11 @@
+.kanban-column-header {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust space between icons and heading */
+  }
+  
+  .kanban-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
